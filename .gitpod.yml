@@ -1,0 +1,8 @@
+tasks:
+  - name: Setup & Test
+    init: npm install && npx playwright install --with-deps
+    command: npx playwright test
+
+ports:
+  - port: 9323
+    onOpen: ignore
